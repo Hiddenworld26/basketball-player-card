@@ -1,0 +1,74 @@
+
+.player-card {
+    position: relative;
+    width: 350px; 
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 12px; 
+    background-color: #FFEB3B; 
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.05); 
+    background-color: #FFEB00;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+  }
+  
+  .player-image,
+  .player-image-hover {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 12px 12px 0 0; 
+  }
+  
+  .player-image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .player-card:hover .player-image {
+    opacity: 0;
+  }
+  
+  .player-card:hover .player-image-hover {
+    opacity: 1;
+  }
+  
+  .player-name {
+    margin: 10px 0;
+    font-size: 1.8em;
+    font-weight: bold; 
+    color: #333; 
+  }
+  
+  .player-position {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555; 
+    font-style: italic; 
+  }
+  
+  .player-stats {
+    margin: 15px 0;
+    font-size: 1em;
+    color: #777;
+    text-align: left; 
+  }
+  
+  .player-stats p {
+    margin: 5px 0; 
+    padding: 0 10px; 
+    border-left: 3px solid #333; 
+    transition: border-color 0.3s; 
+  }
+  
+  .player-card:hover .player-stats p {
+    border-color: #FF9800; 
+  }
+  
